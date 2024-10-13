@@ -43,7 +43,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libEGL_angle \
     libGLESv1_CM_angle \
-    libGLESv2_angle
+    libGLESv2_angle \
+    android.hardware.graphics.common-V4-ndk \
+    android.hardware.graphics.common-V4-ndk.vendor \
+    com.google.hardware.pixel.display-V4-ndk.vendor
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/lib64/android.hardware.graphics.common-V4-ndk.so
 
 # Identity credential
 PRODUCT_PACKAGES += \
