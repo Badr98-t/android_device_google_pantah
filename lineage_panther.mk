@@ -30,6 +30,9 @@ TARGET_ENABLE_BLUR := true
 BLACKIRON_BUILDTYPE := Official
 BLACKIRON_MAINTAINER := Badr98-t
 
+# Ship Google Camera 
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+
  # Inherit from release keys
 $(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 

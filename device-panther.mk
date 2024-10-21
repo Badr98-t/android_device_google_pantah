@@ -424,3 +424,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # HBM
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlayPanther
+
+# SCUDO Flags
+PRODUCT_USE_SCUDO := true

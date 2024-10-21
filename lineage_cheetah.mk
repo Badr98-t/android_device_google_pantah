@@ -23,6 +23,19 @@ PRODUCT_NAME := lineage_cheetah
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
+# BLKI
+ WITH_GMS := true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+BLACKIRON_BUILDTYPE := Official
+BLACKIRON_MAINTAINER := Badr98-t
+
+# Ship Google Camera
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+
+ # Inherit from release keys
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=cheetah \
     PRIVATE_BUILD_DESC="cheetah-user 14 AP2A.240905.003 12231197 release-keys"
